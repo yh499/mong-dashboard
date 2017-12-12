@@ -1,0 +1,8 @@
+<h1>Your Panda private information:</h1>
+<h4>Click name if you wanna change your panda...</h4>
+<img src="http://4.bp.blogspot.com/-G0jvFokbTuE/TiCJZgI_k-I/AAAAAAAAAyw/QY2pHLKZgvM/s640/cute+baby+panda+001.jpg" alt="panda" width="300px" height="250px">
+
+<hr><% for ( var x in panda) { %>
+<p>Panda Name: <a href="/panda/edit/<%= panda[x]._id %>"><%= panda[x].name %></a><br></p>
+<p>Home town: <%= panda[x].home %></p>
+  <% } %>

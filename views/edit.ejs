@@ -1,0 +1,11 @@
+<h1>EDIT PANDA page:</h1>
+<img src="https://s-media-cache-ak0.pinimg.com/originals/56/1a/a9/561aa979ae0e35e7bffab42fd5ab4d60.jpg" alt="panda" width="300px" height="250px">
+<hr><% for ( var x in panda) { %>
+
+ <form action='/panda/edit/<%= panda[x]._id %>' method='post'>
+        Panda Name: <input class="form" type='text' name='name' value="<%= panda[x].name %>"><br> 
+        Home town: <input class="form" type='text' name='home' value ="<%= panda[x].home %>"><br> 
+            <input class="form" type='submit' value='Submit'>
+    </form>
+
+  <% } %><hr>

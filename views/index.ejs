@@ -1,0 +1,14 @@
+ <head><link href="./style.css" rel="stylesheet"></head>
+<div id="main">
+    <h1>Here are all your animals!</h1>
+<img src="http://a.abcnews.com/images/Lifestyle/gty_baby_pandas_01_jc_160930_4x3_992.jpg" alt="panda" width="300px" height="250px">
+<br><a href="/panda/new"> Resister your PANDA!</a>
+
+
+<hr><% for ( var x in panda) { %>
+    <p>Panda Name: <a href="/panda/<%= panda[x]._id %>"><%= panda[x].name %></a></p>
+    <p>Panda HomeTown: <%= panda[x].home %></p>
+    <a href="/delete/<%= panda[x]._id %>">BYE</a>
+    <hr>
+  <% } %>
+</div>
